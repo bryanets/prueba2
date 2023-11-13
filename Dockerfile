@@ -1,5 +1,5 @@
 # Usa la imagen de OpenJDK 21 como base
-FROM adoptopenjdk:17-jdk-hotspot
+FROM eclipse-temurin:17-jdk-alpine
 
 # Directorio de trabajo dentro del contenedor
 WORKDIR /app
