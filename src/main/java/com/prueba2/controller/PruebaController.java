@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api/demo")
+//@CrossOrigin(origins = "https://service-production-8a5d.up.railway.app")
 public class PruebaController {
 
     @GetMapping("/lista")
     public ResponseEntity<Map<String, String>> lista() {
-        System.out.println("esto esta funcionando");
         return new ResponseEntity<>(
                 Map.of("message", "Hello my friend!"),
                 HttpStatus.OK
