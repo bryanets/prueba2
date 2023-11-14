@@ -6,9 +6,7 @@ package com.prueba2.controller;
 
 import com.prueba2.entity.User;
 import com.prueba2.service.UserService;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,6 +31,7 @@ public class UserController {
 
     @GetMapping("/lista")
     public ResponseEntity<Map<String, String>> lista() {
+        System.out.println("Estos es desde login");
         return new ResponseEntity<>(
                 Map.of("message", "Hello my friend!"),
                 HttpStatus.OK

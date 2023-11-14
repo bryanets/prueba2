@@ -22,6 +22,7 @@ public class PruebaController {
 
     @GetMapping("/lista")
     public ResponseEntity<Map<String, String>> lista() {
+        System.out.println("Estos es la lista 1");
         return new ResponseEntity<>(
                 Map.of("message", "Hello my friend!"),
                 HttpStatus.OK
@@ -30,6 +31,7 @@ public class PruebaController {
 
     @GetMapping("/lista2")
     public ResponseEntity<Map<String, String>> lista2() {
+        System.out.println("Estos es la lista 2");
         return new ResponseEntity<>(
                 Map.of("message", "Hello my friend!"),
                 HttpStatus.OK
