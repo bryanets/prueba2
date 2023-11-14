@@ -27,4 +27,12 @@ public class PruebaController {
                 HttpStatus.OK
         );
     }
+
+    @GetMapping("/lista2")
+    public ResponseEntity<Map<String, String>> lista2() {
+        return new ResponseEntity<>(
+                Map.of("message", "Hello my friend!"),
+                HttpStatus.OK
+        );
+    }
 }

@@ -26,7 +26,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/user")
-
 public class UserController {
 
     @Autowired
@@ -40,13 +39,14 @@ public class UserController {
         );
     }
 
+    /*
     @GetMapping("/login")
     @ResponseBody
     public ResponseEntity<User> login(@RequestBody User obj) {
         obj = service.login(obj.getUser(), obj.getPassword());
         return ResponseEntity.ok(obj);
     }
-
+     */
     @PostMapping("/signup")
     @ResponseBody
     public ResponseEntity<Map<String, Object>> insertaUser(
